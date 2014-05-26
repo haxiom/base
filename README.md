@@ -9,7 +9,11 @@ Boilerplate for starting new Haxiom projects. Ideally, this is is leveraged by o
 ```bash
 git clone git@github.com:haxiom/base.git
 cd base
-npm link
+# **for development use only**
+# Here be dragons!
+# this will generate an NPM error, and npm-debug.log
+# but the symlink will still be created
+npm link -g
 
 mkdir ~/my-awesome-project
 cd ~/my-awesome-projects
