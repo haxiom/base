@@ -10,7 +10,6 @@
     "_": true,
     "afterEach": true,
     "beforeEach": true,
-    "braintree": true,
     "describe": true,
     "expect": true,
     "fake": true,
