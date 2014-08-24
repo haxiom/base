@@ -4,22 +4,37 @@ Generator Haxiom Base
 Boilerplate for starting new Haxiom projects. Ideally, this is is leveraged by other use-case specific generators.
 
 
-# Development
+# Use
 
 ```bash
-git clone git@github.com:haxiom/base.git
-cd base
-# **for development use only**
-# Here be dragons!
-# this will generate an NPM error, and npm-debug.log
-# but the symlink will still be created
-npm link -g
+# you do not have yo installed
+npm i -g yo
+
+npm i -g haxiom/base
 
 mkdir ~/my-awesome-project
 cd ~/my-awesome-projects
 yo haxiom-base
 ```
 
-1. Project description and name inserted into README
-2. Package.json contributor information
-  - The issue here is finding a way to play nice with other generators that may be touching package.json
+# Develop
+
+```bash
+# fork or clone this repo down
+cd /path/to/my/clone
+
+# this will make allow you to use
+# the copy from your repo
+# rather than the one previously
+# installed via npm
+# WARNING:
+# this will cause an NPM error,
+# but things should still work. yolo.
+npm link -g
+```
+
+# Todo
+
+- [ ] Project description and name inserted into README
+- [ ] Package.json contributor information
+    - The issue here is finding a way to play nice with other generators that may be touching package.json
